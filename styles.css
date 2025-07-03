@@ -1,4 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+ :root{
+    --primary-color:#2b5876;
+    --secondary-color:#4e4377;
+    --weak-color:rgb(206, 85, 105);
+
+ }
 * {
     margin:0;
     padding:0;
@@ -7,6 +14,7 @@
 }
 
 body{
+    background: linear-gradient(45deg,var(--primary-color), var(--secondary-color));
     min-height:100vh;
     display: flex;
     justify-content: center;
@@ -14,4 +22,46 @@ body{
     flex-direction: column;
     color:grey;
     padding: 20px;
+}
+.container{
+    background-color: whitesmoke;
+    padding:2.5rem;
+    border-radius:1rem;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    width:90%;
+    max-width: 450px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 1.8rem;
+    color:var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 0.5rem;
+
+}
+h1::after{             /*for underline near the heading*/
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    width:50%;
+    height:3px;
+    background:linear-gradient(90deg,var(--primary-color),var(--secondary-color));
+    border-radius: 2px;
+}
+.password-container{
+    margin:2rem;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border:1px solid whitesmoke;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 1rem 0 0;
+    
 }
