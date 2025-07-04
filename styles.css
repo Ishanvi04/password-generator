@@ -141,6 +141,7 @@ input[type="checkbox"]{
     cursor:pointer;
     outline:none;
     transition: all 0.4s;
+    position: relative;
 }
 
 input[type="checkbox"]:checked{
